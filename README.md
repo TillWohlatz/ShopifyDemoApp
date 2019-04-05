@@ -7,6 +7,7 @@ Demo is based on the following application demo tutorial:
 
 ## Binding localhost app to shopify partner with ngrok tunnel 
 npm i -g ngrok
+
 ngrok http 3000
 
 In shopify under : https://partners.shopify.com/970413/apps/2840321#/
