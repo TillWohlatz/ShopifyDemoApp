@@ -10,6 +10,19 @@ import {
     SettingToggle,
     TextStyle,
   } from '@shopify/polaris';
+import Cookies from 'js-cookie';
+
+const {  SHOPIFY_API_KEY } = process.env;
+
+const Shopify = require('shopify-api');
+ 
+// const shopify = new Shopify({
+//   shopName:  Cookies.get('shopOrigin'),
+//   apiKey: SHOPIFY_API_KEY,
+ 
+// });
+// example under https://www.npmjs.com/package/shopify-api
+
   
   class AppendTrackingScript extends React.Component{
     state = {
@@ -53,7 +66,7 @@ import {
     appendMastertag = () => {
         
         console.log('submission', this.state);
-
+        console.log('Api access', this.shopify);
     
     };
 
